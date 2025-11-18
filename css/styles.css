@@ -16,6 +16,21 @@ body{
     font-size: var(--tamaño-fuente); /*1rem = 16px*/
 }
 
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.6rem;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
 
 /*utilidades*/
 .contenedor{
@@ -25,15 +40,6 @@ body{
 
 .bg-secundario{
     background-color: var(--primario);
-}
-
-
-h1{
-    font-size: 2.5rem;
-}
-
-h2{
-    font-size: 1.8rem;
 }
 
 .título{
@@ -84,8 +90,25 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     height: 45rem;
+    position: relative;
 }
 
 .contenido-hero{
-    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--blanco);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion{
+    display: flex;
+    justify-content: center;
 }
